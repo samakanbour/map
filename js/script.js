@@ -11,7 +11,7 @@ $(document).ready(function () {
 			{ featureType: "road", elementType: "geometry", stylers: [{ lightness: 100 }, { visibility: "simplified" } ] },
 			{ featureType: "road", elementType: "labels", stylers: [ { visibility: "off" } ] } ];
 		var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
-		var mapOptions = { zoom: 2, center: new google.maps.LatLng(28.0000, 2.0000), 
+		var mapOptions = { zoom: 2, center: new google.maps.LatLng(5.0000, 2.0000), 
 			mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style'] } };
 		map = new google.maps.Map($('article')[0], mapOptions);
 		map.mapTypes.set('map_style', styledMap);
@@ -25,7 +25,7 @@ function reset(){
 	$('#name').val(''); $('#city').val(''); 
 	$('#name').typeahead('setQuery', '');
 	$('#city').typeahead('setQuery', '');
-	zoom(2, new google.maps.LatLng(28.0000, 2.0000));
+	zoom(2, new google.maps.LatLng(5.0000, 2.0000));
 }
 
 function zoom(n, position){

@@ -82,27 +82,23 @@ aside input[type="file"] {
     cursor: pointer;
 }
 
-.tt-hint {
-    margin-top: 10px;
-    color: #999;
-    padding: 6px 10px;
-    height: 20px;
-    width: 188px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.tt-dropdown-menu {
-    width: 210px;
+.tt-hint, .tt-dropdown-menu {
+    width: 220px;
     margin-top: 5px;
     border: 1px solid #ccc;
     background-color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     border-radius: 5px;
+}
+
+.tt-hint {
+    margin-top: 10px;
+    color: #999;
+    padding: 6px 10px;
+    height: 35px;
 }
 
 .tt-suggestion {
