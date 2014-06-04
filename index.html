@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="img/logo.png">
+		<title>Interactive Map</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwyWnLVp8pvMTyufKayOjGZFsFCtW-Pek&sensor=false"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/markerclusterer.js"></script>
+		<script type="text/javascript" src="js/typeahead.js"></script>
+		<link rel="stylesheet" type="text/css"  media="all" href="css/reset.css">
+		<link rel="stylesheet" type="text/css"  media="all" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css"  media="all" href="css/style.css">
+	</head>
+	<body>
+	<header>Hotels Around the World</header>
+	<section><article></article></section>
+	<aside>
+		<img src="img/icon.png">		
+		<h1>Instructions</h1>
+		<p>
+			This framework is an interactive plot of a large geographic dataset. Here is a tilde-separated textfile (138MB) containing a database of all of the hotels in the world that you need to upload here in order to locate them: <a href="http://golancourses.net/2014/resources/hotelsbase.txt" target="_blank">Hotelsbase</a> 
+		</p>
+		<div class="file-input-wrapper">
+  			<button class="btn btn-info" type="button">Upload File</button>
+  			<input type="file" name="file" onchange='readText(this)'/>
+		</div>
+		<input 	class="form-control" type="text"   id="name" 	placeholder="Search by name...">
+		<input 	class="form-control" type="text"   id="city" 	placeholder="Search by location...">
+		<button class="btn btn-info" type="button" id="reset" 	onclick="reset()">Reset</button>
+		<button class="btn btn-info" type="button" id="stop" 	onclick="stopWorker()">Stop loading</button>
+	</aside>
+	</body>
+</html>
