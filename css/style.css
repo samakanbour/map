@@ -15,7 +15,7 @@ body {
     background-color: #BBF8F1;
     font-family: 'Open Sans Condensed';
     overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 header {
@@ -55,7 +55,8 @@ aside img, aside h1 {
 }
 
 aside p {
-    line-height: 30px;
+    line-height: 25px;
+    margin-bottom: 20px;
 }
 
 aside input, aside button {
