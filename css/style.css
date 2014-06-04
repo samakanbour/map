@@ -83,7 +83,7 @@ aside input[type="file"] {
     cursor: pointer;
 }
 
-.tt-hint, .tt-dropdown-menu {
+.tt-query, .tt-hint, .tt-dropdown-menu {
     width: 220px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -95,15 +95,10 @@ aside input[type="file"] {
     border-radius: 5px;
 }
 
-.tt-hint {
-    margin-top: 10px;
-    color: #999;
+.tt-suggestion, .tt-hint {
     padding: 6px 10px;
     height: 35px;
-}
-
-.tt-suggestion {
-    padding: 6px 10px;
+    color: #999;
 }
 
 .tt-suggestion.tt-is-under-cursor {
